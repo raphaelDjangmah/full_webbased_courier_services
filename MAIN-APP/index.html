@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>QuickPick</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+    
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDemXVFH-Xd_YdhWj7qcR0IB1BrBiBNEIU&libraries=places&callback=initAutocomplete" async defer></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 
+   <script src="./assets/js/autocomplete.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    
+    <!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="./assets/css/util.css">
+
+        <link rel="stylesheet" type="text/css" href="./assets/css/addresses.css">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div class="logo">
+                <h1><a href="index.html">QuickPick<span>.</span></a></h1>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="#why-us">Track Order</a></li>
+                    <li><a class="nav-link scrollto" href="#why-us">Contact Us</a></li>
+                    <li><a class="nav-link scrollto" href="#why-us">Profile</a></li>
+                    <li><a class="getstarted scrollto" href="../signinsignup/login.html">Logout</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header>
+    <hr/>
+    <!-- End Header -->
+
+    <!-- TABLE CONTAINING DETAILS -->
+    <section>
+        <div class="limiter">
+            <div class="container-login100 row-justify-center">
+                    <form class="login100-form validate-form" action="../MAIN-APP/index.html" method="POST">
+                        <span class="login100-form-title">
+                            Item For PickUp?
+                        </span>
+    
+                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                            <input class="input100" id="autocomplete" placeholder="Pickup Location" onFocus="geolocate()" type="text">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    
+                    
+                        
+                        <div class="wrap-input100 validate-input" data-validate = "dropOff Location required">
+                            <input class="input100" id="autocomplete" placeholder="DropOff Location" onFocus="geolocate()" type="text">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <!-- <input id="autocomplete" placeholder="PickUp Location" onFocus="geolocate()" type="text" class="form-control">
+                        <input id="autocomplete" placeholder="DropOff Location" onFocus="geolocate()" type="text" class="form-control"> -->
+
+                        <div class="wrap-input100 validate-input" data-validate = "item type is required">
+                            <input class="input100" type="text" name="itemtype" placeholder="item type">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </span>
+                        </div>
+    
+                        <div class="container-login100-form-btn">
+                            <a class="login100-form-btn" href="./order-details.html">
+                                <!-- <button class="login100-form-btn"> -->
+                                    PLACE ORDER
+                                <!-- </button> -->
+                            </a>
+                        </div>
+
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
